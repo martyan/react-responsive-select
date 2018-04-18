@@ -242,12 +242,13 @@ li {
 .caret-icon {
   position: absolute;
   right: 1rem;
-  top: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
   fill: #333;
 }
 
 .rrs--options-visible .caret-icon {
-  transform: rotate(180deg);
+  transform: rotate(180deg) translateY(50%);
 }
 
 .checkbox {
