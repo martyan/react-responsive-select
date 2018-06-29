@@ -29,6 +29,7 @@ export default class SingleSelectOption extends Component {
           rrs__option
           ${(singleSelectSelectedIndex === index) ? 'rrs__option--selected' : ''}
           ${(nextPotentialSelectionIndex === index) ? 'rrs__option--next-selection' : ''}
+          ${(option.disabled === true) ? 'rrs__option--disabled' : ''}
         `)}
       >
         {customOptionRenderer ? customOptionRenderer(option) : (option.markup || option.text)}
